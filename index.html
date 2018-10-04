@@ -1,0 +1,47 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>TS Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+</head>
+<body>
+    <div id="mainContainer">
+        <div id="screenContainer">
+            <input id="screen" type="text" maxlength="12" readonly="readonly"/>
+            <div id="subScreen"></div>
+        </div>
+        <div id="lowerContainer">
+            <div id="buttonContainer">
+                
+                <button id="clearBtn" type="button" onclick="calculator.clearCalc()">C</button>
+                <button id="1Btn" type="button" onclick="calculator.numPress('1')">1</button>
+                <button id="4Btn" type="button" onclick="calculator.numPress('4')">4</button>
+                <button id="7Btn" type="button" onclick="calculator.numPress('7')">7</button>
+                <button id="closeBtn" type="button" onmousedown="calculator.startClick()" onmouseup="calculator.upScript()">()</button>
+
+                <button id="multiBtn" type="button" onclick="calculator.multiply()">x</button> 
+                <button id="2Btn" type="button" onclick="calculator.numPress('2')">2</button>
+                <button id="5Btn" type="button" onclick="calculator.numPress('5')">5</button>
+                <button id="8Btn" type="button" onclick="calculator.numPress('8')">8</button>
+                <button id="0Btn" type="button" onclick="calculator.numPress('0')">0</button>
+
+                <button id="divBtn" type="button" onclick="calculator.divide()">/</button>
+                <button id="3Btn" type="button" onclick="calculator.numPress('3')">3</button>
+                <button id="6Btn" type="button" onclick="calculator.numPress('6')">6</button> 
+                <button id="9Btn" type="button" onclick="calculator.numPress('9')">9</button>
+                <button id="dotBtn" type="button" onclick="calculator.numPress('.')">.</button>
+
+                <button id="eraseBtn" type="button" onclick="calculator.deleteLast()">Del</button>
+                <button id="plusBtn" type="button" onclick="calculator.add()">+</button>
+                <button id="minusBtn" type="button" onclick="calculator.subtract()">-</button>
+                <button id="equalBtn" type="button" onclick="calculator.result()">=</button>  
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+
+</body>
+</html>
